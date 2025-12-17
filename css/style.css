@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
+/* h1{
+    padding: 20px;
+    border: 5px solid black;
+    /* margin-right: 10px; */
+    /* margin-left: 20px; 
+    margin: 10px 20px 0px 0px;
+    height: 100px;
+    width: 50px;
+} */
+
+
+/* Class Selctors */
+/* p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+
+.dark{
+    background-color: grey;
+    color: white;
+}
+
+#list{
+    background-color: chocolate;
+} */
+
+body{
+    font-family: "Slabo 27px", serif;
+}
+
+#ingredients {
+    background-color: #6ab492;
+}
+
+#steps {
+    background-color: #f3cc2e;
+}
+
+#ingredients, #steps{
+    padding: 4px 8px 4px 8px;
+    margin: 8px 0 8px 0;
+}
+
+#ingredients h2{
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+ul li:first-child{
+    color: red;
+}
+
+#ingredients ul {
+    font-weight: bolder;
+    list-style: "🫚 ";;
+}
+
+.box{
+    height: 250px;
+    width: 250px;
+    
+    background-color: red;
+
+    border-radius: 100%;
+
+    margin: 10px 20px;
+    padding: 10px;
+    /* border: 5px black solid; */
+}
+
+.italic {
+    font-style: italic;
+    font-weight: bolder;
+}

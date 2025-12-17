@@ -1,0 +1,51 @@
+* {
+    padding: 0rem;
+    margin: 0rem;
+}
+
+body{
+    background-image: url(../ChatGPT\ Image\ Dec\ 17\,\ 2025\,\ 12_34_44\ PM.png);
+    background-color: #e33c3c;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container{
+    width: 70%;
+    height: 100%;
+    background-color: #e33c3c;
+}
+
+main{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 20rem;
+    height: 20rem;
+    margin: 1rem;
+    background-color: #112445;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+.card:hover{
+    cursor: pointer;
+    transform: rotate(45deg) scale(1.3);
+    border-radius: 100%;
+
+    background-color: #7686a3;
+}
