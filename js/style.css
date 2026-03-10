@@ -1,0 +1,12 @@
+.lab-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.lab{
+    background-color: #06194a;
+    color: #ffffff;
+    padding: .5rem;
+    border-radius: 10px;
+}

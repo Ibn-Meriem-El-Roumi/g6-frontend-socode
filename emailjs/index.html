@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="ar/arab.html">Arabic</a>
+    <a href="fr/french.html">French</a>
+    <a href="/">English</a>
+
+    <form>
+        <div class="fields">
+            <label for="#">Title</label>
+            <input type="text" name="title" id="title">
+        </div>
+        <div class="fields">
+            <label for="#">Name</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div class="fields">
+            <label for="#">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="fields">
+            <label for="#">Message</label>
+            <textarea name="message" id="message"></textarea>
+        </div>
+
+        <button type="submit" id="submit">Send Mail</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+:root {
+    --play-primary-900: #2B1D20;
+    --play-primary-700: #C24B3A;
+    --play-primary-500: #FF7A59;
+    --play-primary-300: #FFB3A1;
+    --play-accent:      #6EE7B7;
+    --play-secondary:   #4C9AFF;
+    --play-muted:       #FFF3F1;
+    --play-bg:          #FFFDFC;
+    --play-surface:     #FFFFFF;
+    --play-text:        #2B1D20;
+
+}
+
+*{
+    padding: 0rem;
+    margin: 0rem;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+
+    padding: 5rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: var(--play-bg);
+    color: var(--play-text);
+}
+
+h1{
+    margin: 0 0 5rem 0;
+}
+
+#pets-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    margin: 2rem 0;
+}
+
+.pet {
+    background: var(--play-secondary);
+    padding: 0.5rem;
+}

@@ -1,0 +1,61 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<body>
+    <select name="lang" id="lang">
+        <option value="en">English</option>
+        <option value="fr">French</option>
+        <option value="ar">Arabic</option>
+    </select>
+
+    <div id="content">
+        <h1>Title</h1>
+        <p>
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam eveniet, minus autem veritatis exercitationem commodi enim adipisci accusamus optio, incidunt at ex unde cum temporibus. Est reiciendis dolorem repudiandae voluptate.
+        </p>
+    </div>
+
+    <script>
+        const documentLang = document.querySelector("html")
+        const languages = document.querySelector("#lang")
+        const content = document.querySelector("#content")
+        const ls = localStorage
+
+
+        languages.addEventListener("change", async () => {
+            const frenchContent = await fetchFrench()
+            ls.setItem("fr", JSON.stringify(frenchContent))
+            location.reload
+        })
+
+        document.addEventListener("DOMContentLoaded", () =>{
+            documentLang.lang = languages.value
+            const french = ls.getItem("fr")
+            content.innerHTML = `
+                <h1>${french.welcomepage[0].title}</h1>
+                <p>
+                    ${french.welcomepage[0].content}
+                </p>
+            
+        })
+
+
+        async function fetchFrench(){
+            try {
+                const res = await fetch("langauges.json")
+                const data = await res.json()
+
+                console.log(data.fr.welcomepage[0].title);
+                
+                return data.fr
+            } catch (error) {
+                
+            }
+        }
+    </script>
+</body>
+</html> -->
